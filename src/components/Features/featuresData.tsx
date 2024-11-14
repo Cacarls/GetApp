@@ -3,7 +3,7 @@ import { Feature } from "@/types/feature";
 const featuresData: Feature[] = [
   {
     id: 1,
-    icon: <img src="/images/features/delivery.png" alt="The Best Courier" width="100" height="100" />,
+    icon: <img src="/images/features/delivery.png" alt="The Best Courier" width="300" height="300" />,
     title: "The Best Courier",
     paragraph:
       "Our platform selects the most reliable couriers to ensure your deliveries are handled with care and efficiency, giving you peace of mind knowing your items are in good hands.",
