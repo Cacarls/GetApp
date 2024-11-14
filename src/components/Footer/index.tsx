@@ -68,7 +68,7 @@ const Footer = () => {
                   aria-label="TikTok"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                  className="text-body-color duration-300 hover:text-pink-500 dark:text-body-color-dark dark:hover:text-pink-500"
                 >
                   <svg
                     className="e-font-icon-svg e-fab-tiktok"
