@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
+     <footer className="relative z-10 bg-gray-100 pt-16 dark:bg-gray-dark md:pt-20 lg:pt-4">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-between items-center">
             {/* Get Started Section */}
@@ -42,7 +42,7 @@ const Footer = () => {
                   aria-label="Instagram"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                  className="text-body-color duration-300 hover:text-violet-500 dark:text-body-color-dark dark:hover:text-violet-500"
                 >
                   <svg width="55" height="55" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 2C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2H7ZM4 7C4 5.34315 5.34315 4 7 4H17C18.6569 4 20 5.34315 20 7V17C20 18.6569 18.6569 20 17 20H7C5.34315 20 4 18.6569 4 17V7ZM12 7C9.79086 7 8 8.79086 8 11C8 13.2091 9.79086 15 12 15C14.2091 15 16 13.2091 16 11C16 8.79086 14.2091 7 12 7ZM6 11C6 7.68629 8.68629 5 12 5C15.3137 5 18 7.68629 18 11C18 14.3137 15.3137 17 12 17C8.68629 17 6 14.3137 6 11ZM18.5 7.5C18.5 7.77614 18.2761 8 18 8C17.7239 8 17.5 7.77614 17.5 7.5C17.5 7.22386 17.7239 7 18 7C18.2761 7 18.5 7.22386 18.5 7.5Z" />
@@ -55,9 +55,9 @@ const Footer = () => {
                   aria-label="YouTube"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                  className="text-body-color duration-300 hover:text-red-500 dark:text-body-color-dark dark:hover:text-red-500"
                 >
-                  <svg width="55" height="55" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.571 6.94856C20.0163 7.08472 20.4044 7.38594 20.6804 7.80356C21.0232 8.35355 21.2 9.06576 21.2 9.8V14.2C21.2 14.9342 21.0232 15.6464 20.6804 16.1964C20.4044 16.6141 20.0163 16.9153 19.571 17.0514C18.5093 17.3847 12 17.3847 12 17.3847C12 17.3847 5.49066 17.3847 4.42899 17.0514C3.98369 16.9153 3.59561 16.6141 3.3196 16.1964C2.97682 15.6464 2.8 14.9342 2.8 14.2V9.8C2.8 9.06576 2.97682 8.35355 3.3196 7.80356C3.59561 7.38594 3.98369 7.08472 4.42899 6.94856C5.49066 6.61534 12 6.61534 12 6.61534C12 6.61534 18.5093 6.61534 19.571 6.94856ZM15.0075 12L10.9963 9.84861V14.1514L15.0075 12Z" />
                   </svg>
                 </a>
