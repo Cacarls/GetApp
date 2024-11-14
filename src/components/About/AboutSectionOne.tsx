@@ -38,7 +38,7 @@ const AboutSectionOne = () => {
             </div>
 
             <div className="w-full lg:w-1/2 px-4">
-              <div className="relative w-full h-0 pb-[142.25%]">  
+              <div className="relative w-full h-0 pb-[145.25%]">  
                 <Image
                   src="/images/about/about-image.png"
                   alt="about-image"

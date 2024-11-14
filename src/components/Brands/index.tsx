@@ -5,7 +5,7 @@ import Image from "next/image";
 import brandsData from "./brandsData";
 import { useRef, useEffect, useState } from "react";
 
-const AUTO_SCROLL_SPEED = 3; // Speed of auto-scroll in pixels
+const AUTO_SCROLL_SPEED = 2; // Speed of auto-scroll in pixels
 const LONG_PRESS_DURATION = 100; // Duration in ms for long press to be detected
 
 const Brands = () => {
@@ -58,13 +58,19 @@ const Brands = () => {
     }, LONG_PRESS_DURATION);
   };
 
-  // Handle manual scrolling
+  // Handle manual scrolling with smooth effect
   const handlePointerMove = (event) => {
     if (!isManualScrollEnabled || !scrollContainerRef.current) return;
 
     const x = event.pageX;
     const walk = (x - startX) * 1.5; // Adjust scrolling speed for smoothness
-    scrollContainerRef.current.scrollLeft = scrollLeftStart - walk;
+
+    // Apply the scroll position to the container with smooth transition
+    const container = scrollContainerRef.current;
+    container.scrollLeft = scrollLeftStart - walk;
+
+    // Adding transition class for smooth scroll effect
+    container.style.transition = "scroll-left 0.1s ease-out";
   };
 
   // Handle pointer release to disable manual scrolling and resume auto-scroll
@@ -76,16 +82,19 @@ const Brands = () => {
 
   return (
     <section className="py-16 bg-gray-900">
-    <div className="container mx-auto px-4">
-      <h2 className="text-center text-4xl font-bold mb-10 text-white">
-        Our Trusted Brands
-      </h2>
+      <div className="container mx-auto px-4">
+        <h2 className="text-center text-4xl font-bold mb-10 text-white">
+          Our Trusted Brands
+        </h2>
 
         {/* Scrollable Grid for Logos with hidden scrollbar */}
         <div
           ref={scrollContainerRef}
           className={`flex gap-8 overflow-x-hidden no-scrollbar ${isManualScrollEnabled ? "cursor-grabbing" : "cursor-pointer"}`}
-          style={{ scrollBehavior: "smooth", whiteSpace: "nowrap" }}
+          style={{
+            scrollBehavior: "smooth",
+            whiteSpace: "nowrap",
+          }}
           onPointerDown={handlePointerDown} // Start long press for manual scroll
           onPointerUp={handlePointerUp} // Resume auto-scroll on pointer release
           onPointerMove={handlePointerMove} // Enable manual scrolling on move
