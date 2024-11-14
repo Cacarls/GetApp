@@ -6,12 +6,16 @@ const NewsLatterBox = () => {
   const { theme } = useTheme();
 
   return (
-    <div className="relative z-10 rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11">
+    <div
+      className={`relative z-10 rounded-sm p-8 shadow-three sm:p-11 lg:p-8 xl:p-11 ${
+        theme === "light" ? "border-2 border-gray-400" : "" // Add border color in light mode
+      } dark:bg-gray-dark dark:border-transparent`}
+    >
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
         Subscribe to receive future updates
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-      &nbsp;
+        &nbsp;
       </p>
       <div>
         <input
@@ -26,7 +30,7 @@ const NewsLatterBox = () => {
           placeholder="Enter your email"
           className="border-stroke mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
         />
-      &nbsp;
+        &nbsp;
         <input
           type="submit"
           value="Subscribe"
@@ -170,24 +174,19 @@ const NewsLatterBox = () => {
                 d="M4 73.9999C11 61.3332 30.7 34.7999 53.5 29.9999C82 23.9999 98 25.9999 109 14.4999C120 2.99986 129 -19.5001 152 -19.5001C175 -19.5001 190 -11.0001 203.5 -24.5001C217 -38.0001 213.5 -62.0001 247 -53.5001C273.8 -46.7001 310.167 -61 325 -69"
                 stroke="url(#paint2_linear_1028_603)"
               />
-              <path
-                opacity="0.45"
-                d="M41 40.9999C48 28.3332 67.7 1.79986 90.5 -3.00014C119 -9.00014 135 -7.00014 146 -18.5001C157 -30.0001 166 -52.5001 189 -52.5001C212 -52.5001 227 -44.0001 240.5 -57.5001C254 -71.0001 250.5 -95.0001 284 -86.5001C310.8 -79.7001 347.167 -94 362 -102"
-                stroke="url(#paint3_linear_1028_603)"
-              />
             </g>
             <defs>
               <linearGradient
                 id="paint0_linear_1028_603"
-                x1="291.35"
-                y1="12.1032"
-                x2="179.211"
-                y2="237.617"
+                x1="101.079"
+                y1="59.3079"
+                x2="40.7327"
+                y2="-18.6354"
                 gradientUnits="userSpaceOnUse"
               >
                 <stop
-                  offset="0.328125"
                   stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
@@ -197,15 +196,15 @@ const NewsLatterBox = () => {
               </linearGradient>
               <linearGradient
                 id="paint1_linear_1028_603"
-                x1="333.35"
-                y1="-12.8968"
-                x2="221.211"
-                y2="212.617"
+                x1="148.079"
+                y1="62.3079"
+                x2="87.7327"
+                y2="-13.6354"
                 gradientUnits="userSpaceOnUse"
               >
                 <stop
-                  offset="0.328125"
                   stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
@@ -215,33 +214,15 @@ const NewsLatterBox = () => {
               </linearGradient>
               <linearGradient
                 id="paint2_linear_1028_603"
-                x1="294.35"
-                y1="-3.89678"
-                x2="182.211"
-                y2="221.617"
+                x1="126.079"
+                y1="57.3079"
+                x2="65.7327"
+                y2="-20.6354"
                 gradientUnits="userSpaceOnUse"
               >
                 <stop
-                  offset="0.328125"
                   stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                />
-                <stop
-                  offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
-                  stopOpacity="0"
-                />
-              </linearGradient>
-              <linearGradient
-                id="paint3_linear_1028_603"
-                x1="331.35"
-                y1="-36.8968"
-                x2="219.211"
-                y2="188.617"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop
-                  offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
