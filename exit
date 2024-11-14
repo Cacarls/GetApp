@@ -1,0 +1,36 @@
+[33mcommit 98c17d2010ebf495755d6da8c5f76a349c7781f8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 5a96d75 209bb37
+Author: Cacarls <cacarlsrosario@gmail.com>
+Date:   Thu Nov 14 09:15:51 2024 +0800
+
+    Merge changes from origin/main
+
+[33mcommit 5a96d75b45b27031ab4d293a35a1afc8f0784b0a[m
+Author: Cacarls <cacarlsrosario@gmail.com>
+Date:   Thu Nov 14 09:01:28 2024 +0800
+
+    Adding pictures in services
+
+[33mcommit 209bb371a084fe5ed4355ccff2c9eadc5445d71e[m
+Author: Carl Ivan Sarate Rosario <cacarlsrosario@gmail.com>
+Date:   Thu Nov 14 08:53:51 2024 +0800
+
+    Update README.md
+
+[33mcommit a48113ab0a1e3e8210f30427627f9932661b6ecf[m
+Author: Cacarls <cacarlsrosario@gmail.com>
+Date:   Mon Nov 4 15:20:08 2024 +0800
+
+    Deleting Folders that are not use
+
+[33mcommit 6aaa79e6df42439966489099b2f8253d2c7d1e5b[m
+Author: Cacarls <cacarlsrosario@gmail.com>
+Date:   Mon Nov 4 15:12:27 2024 +0800
+
+    Added new brands
+
+[33mcommit 11742cffe5d0a697cee1195d1d217dd0f44ab3c0[m
+Author: Cacarls <cacarlsrosario@gmail.com>
+Date:   Mon Nov 4 14:23:47 2024 +0800
+
+    Initial commit
