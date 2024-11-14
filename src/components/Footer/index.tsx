@@ -135,7 +135,7 @@ const Footer = () => {
             </div>
           </div>
                     {/* Copyright Section */}
-              <div className="border-t border-gray-200 py-5 mt-1 text-center">
+              <div className="border-t border-gray-500 py-5 mt-1 text-center">
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Copyright © 2024 GetApp.
                 </p>

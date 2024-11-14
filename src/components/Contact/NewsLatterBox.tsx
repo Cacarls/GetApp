@@ -8,7 +8,7 @@ const NewsLatterBox = () => {
   return (
     <div
       className={`relative z-10 rounded-sm p-8 shadow-three sm:p-11 lg:p-8 xl:p-11 ${
-        theme === "light" ? "border-2 border-gray-400" : "" // Add border color in light mode
+        theme === "light" ? "border-2 border-gray-400" : "" 
       } dark:bg-gray-dark dark:border-transparent`}
     >
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
