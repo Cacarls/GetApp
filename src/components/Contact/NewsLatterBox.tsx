@@ -27,8 +27,8 @@ const ContactDetails = () => {
           {/* Phone Number Icon */}
           <div className="flex items-center space-x-2">
             <FontAwesomeIcon
-              icon={faPhone} // Phone icon
-              size="2x" // Adjust the size as needed
+              icon={faPhone} 
+              size="2x" 
               className={`text-${theme === 'light' ? 'red-500' : 'white'}`}
               aria-label="Phone"
             />
@@ -37,12 +37,13 @@ const ContactDetails = () => {
           <div className="ml-8">
             <p>+63 35 422 7503 <br/> +63 906 599 9634</p>
           </div>
-
+          &nbsp;
+          
           {/* Email Icon */}
           <div className="flex items-center space-x-2">
             <FontAwesomeIcon
-              icon={faEnvelope} // Email icon
-              size="2x" // Adjust the size as needed
+              icon={faEnvelope} 
+              size="2x" 
               className={`text-${theme === 'light' ? 'red-500' : 'white'}`}
               aria-label="Email"
             />
@@ -51,12 +52,13 @@ const ContactDetails = () => {
           <div className="ml-8">
             <p>getappph@gmail.com</p>
           </div>
+          &nbsp;
 
           {/* Location Icon */}
           <div className="flex items-center space-x-2">
             <FontAwesomeIcon
-              icon={faMapMarkerAlt} // Location icon
-              size="2x" // Adjust the size as needed
+              icon={faMapMarkerAlt} 
+              size="2x"
               className={`text-${theme === 'light' ? 'red-500' : 'white'}`}
               aria-label="Location"
             />
@@ -64,7 +66,7 @@ const ContactDetails = () => {
           </div>
           <div className="ml-8">
             <p>
-              Door 7, G/F, Angel's Apartment, Capitol Area Taclob, Dumaguete
+              Door 7, G/F, Angel's Apartment, Capitol Area Taclobo, Dumaguete
               City Negros Oriental, Philippines 6200
             </p>
           </div>
