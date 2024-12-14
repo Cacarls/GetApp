@@ -4,31 +4,31 @@ const menuData: Menu[] = [
   {
     id: 1,
     title: "Home",
-    path: "#home",  // Updated for scrolling
+    path: "#home",  
     newTab: false,
   },
   {
     id: 2,
     title: "About",
-    path: "#about",  // Updated for scrolling
+    path: "#about",  
     newTab: false,
   },
   {
     id: 3,
     title: "Pricing",
-    path: "#pricing",  // Updated for scrolling
+    path: "#pricing",  
     newTab: false,
   },
   {
     id: 4,
     title: "Services",
-    path: "#services",  // If you have a services section, ensure it has an id
+    path: "#services",  
     newTab: false,
   },
   {
     id: 5,
     title: "Contact",
-    path: "#contact",  // Updated for scrolling
+    path: "#contact",  
     newTab: false,
   },
 ];

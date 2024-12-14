@@ -9,8 +9,7 @@ const PricingBox = (props: {
 }) => {
   const { price, duration, packageName, subtitle, children } = props;
 
-  // Assuming you're using state to track the light/dark mode
-  const [isLightMode, setIsLightMode] = useState<boolean>(true); // Default is light mode
+  const [isLightMode, setIsLightMode] = useState<boolean>(true);
 
   return (
     <div className="w-full">
