@@ -22,7 +22,7 @@ const Header = () => {
       setSticky(false);
     }
   };
-  
+
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
     return () => {
@@ -86,10 +86,10 @@ const Header = () => {
                       usePathName === menuItem.path
                         ? "text-primary dark:text-white"
                         : "text-dark dark:text-white/70"
-                    } hover:text-primary dark:hover:text-white/70`}
+                    } hover:text-red-500 dark:hover:text-red-400`}
                   >
                     {menuItem.title}
-                    <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-primary dark:bg-white/70 transition-transform transform scale-x-0 group-hover:scale-x-100"></span>
+                    <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-red-500 dark:bg-red-400 transition-transform transform scale-x-0 group-hover:scale-x-100"></span>
                   </Link>
                 </li>
               ))}
