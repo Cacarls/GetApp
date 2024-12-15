@@ -21,18 +21,14 @@ const PricingBox = (props: {
         <div className="flex items-center justify-between">
           <h3 className="price mb-2 text-[32px] font-bold">
             ₱<span className="amount">{price}</span>
-            <span className="time text-lg font-medium">
-              /{duration}
-            </span>
+            <span className="time text-lg font-medium">/{duration}</span>
           </h3>
-          <h4 className="mb-2 text-xl font-bold">
-            {packageName}
-          </h4>
+          <h4 className="mb-2 text-xl font-bold">{packageName}</h4>
         </div>
         <p className="mb-7 text-base">{subtitle}</p>
         <div className="mb-8 border-b border-body-color border-opacity-10 pb-8">
-          <button className="flex w-full items-center justify-center rounded-sm bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-            Link to greentable
+          <button className="flex w-full items-center justify-center rounded-sm bg-red-500 p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-red-400 hover:shadow-signUp">
+            GET STARTED
           </button>
         </div>
         <div>{children}</div>

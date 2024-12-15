@@ -23,7 +23,7 @@ const Pricing = () => {
               onClick={() => setIsMonthly(true)}
               className={`${
                 isMonthly
-                  ? "pointer-events-none text-primary"
+                  ? "pointer-events-none text-red-500" 
                   : "text-dark dark:text-white"
               } mr-4 cursor-pointer text-base font-semibold`}
             >
@@ -49,7 +49,7 @@ const Pricing = () => {
               className={`${
                 isMonthly
                   ? "text-dark dark:text-white"
-                  : "pointer-events-none text-primary"
+                  : "pointer-events-none text-red-500" 
               } ml-4 cursor-pointer text-base font-semibold`}
             >
               Yearly
@@ -71,7 +71,8 @@ const Pricing = () => {
             <OfferList text="Point-of-Sales (POS) (Max 20 trans/day)" status="active" />
             <OfferList text="Customer Tech Support (Limited)" status="active" />
             <OfferList text="Advertising" status="active" />
-            <OfferList text="Promotional Videos (Short videos for YT Shorts, FB/IG Reels, Tiktok) (Php 300.00 / 30-45 sec video) (Php 500.00 / 45-60 sec video) FREE one (1) 30 sec video when you avail" status="active"/>          </PricingBox>
+            <OfferList text="Promotional Videos (Short videos for YT Shorts, FB/IG Reels, Tiktok) (Php 300.00 / 30-45 sec video) (Php 500.00 / 45-60 sec video) FREE one (1) 30 sec video when you avail" status="active"/>
+          </PricingBox>
           <PricingBox
             packageName="Pro"
             price={isMonthly ? "399" : "789"}
@@ -93,7 +94,8 @@ const Pricing = () => {
             <OfferList text="Voucher Management" status="active" />
             <OfferList text="Merchant App (Software) (Php 900.00/Month)" status="active" />
             <OfferList text="Merchant Device (Hardware Rental) (Php 950.00/Month)" status="active" />
-            <OfferList text="Promotional Videos (Short videos for YT Shorts, FB/IG Reels, Tiktok) (Php 300.00 / 30-45 sec video) (Php 500.00 / 45-60 sec video) FREE one (1) 30 sec video when you avail" status="active"/>          </PricingBox>
+            <OfferList text="Promotional Videos (Short videos for YT Shorts, FB/IG Reels, Tiktok) (Php 300.00 / 30-45 sec video) (Php 500.00 / 45-60 sec video) FREE one (1) 30 sec video when you avail" status="active"/>
+          </PricingBox>
           <PricingBox
             packageName="Enterprise"
             price={isMonthly ? "589" : "999"}
