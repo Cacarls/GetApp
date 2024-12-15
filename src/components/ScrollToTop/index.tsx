@@ -3,17 +3,17 @@ import { useEffect, useState } from "react";
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Top: 0 takes us all the way back to the top of the page
-  // Behavior: smooth keeps it smooth!
+  // Smooth scroll to top functionality
   const scrollToTop = () => {
+    // This scrolls smoothly to the top of the page
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "smooth", // Smooth scroll behavior
     });
   };
 
   useEffect(() => {
-    // Button is displayed after scrolling for 500 pixels
+    // Show or hide button depending on scroll position
     const toggleVisibility = () => {
       if (window.pageYOffset > 300) {
         setIsVisible(true);
@@ -22,6 +22,7 @@ export default function ScrollToTop() {
       }
     };
 
+    // Add event listener on scroll
     window.addEventListener("scroll", toggleVisibility);
 
     return () => window.removeEventListener("scroll", toggleVisibility);
@@ -30,13 +31,27 @@ export default function ScrollToTop() {
   return (
     <div className="fixed bottom-8 right-8 z-[99]">
       {isVisible && (
-        <div
+        <button
           onClick={scrollToTop}
-          aria-label="scroll to top"
-          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+          aria-label="Scroll to top"
+          className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-red-500 text-white shadow-md transition duration-300 ease-in-out hover:bg-red-600 hover:shadow-lg"
         >
-          <span className="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
-        </div>
+          {/* Arrow icon */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="h-6 w-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19 14l-7-7m0 0l-7 7m7-7v18"
+            />
+          </svg>
+        </button>
       )}
     </div>
   );
