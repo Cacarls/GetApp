@@ -32,9 +32,11 @@ const ContactDetails = () => {
               className={`text-${theme === 'light' ? 'red-500' : 'white'}`}
               aria-label="Phone"
             />
-            <div className="text-2xl font-bold">Office Phone Number</div>
+            <div className={`text-2xl font-bold ${theme === 'light' ? 'text-red-500' : 'text-white'}`}>
+              Office Phone Number
+            </div>
           </div>
-          <div className="ml-8">
+          <div className={`ml-8 ${theme === 'light' ? 'text-black' : 'text-white'}`}>
             <p>+63 35 422 7503 <br/> +63 906 599 9634</p>
           </div>
           &nbsp;
@@ -47,9 +49,11 @@ const ContactDetails = () => {
               className={`text-${theme === 'light' ? 'red-500' : 'white'}`}
               aria-label="Email"
             />
-            <div className="text-2xl font-bold">Email</div>
+            <div className={`text-2xl font-bold ${theme === 'light' ? 'text-red-500' : 'text-white'}`}>
+              Email
+            </div>
           </div>
-          <div className="ml-8">
+          <div className={`ml-8 ${theme === 'light' ? 'text-black' : 'text-white'}`}>
             <p>getappph@gmail.com</p>
           </div>
           &nbsp;
@@ -62,9 +66,11 @@ const ContactDetails = () => {
               className={`text-${theme === 'light' ? 'red-500' : 'white'}`}
               aria-label="Location"
             />
-            <div className="text-2xl font-bold">Our Office Address</div>
+            <div className={`text-2xl font-bold ${theme === 'light' ? 'text-red-500' : 'text-white'}`}>
+              Our Office Address
+            </div>
           </div>
-          <div className="ml-8">
+          <div className={`ml-8 ${theme === 'light' ? 'text-black' : 'text-white'}`}>
             <p>
               Door 7, G/F, Angel's Apartment, Capitol Area Taclobo, Dumaguete
               City Negros Oriental, Philippines 6200
