@@ -18,7 +18,8 @@ const AboutSectionOne = () => {
 
               <div className="max-w-[570px]">
                 <div className="mb-5">
-                  <h3 className="text-3xl font-semibold text-primary mb-3">
+                  {/* Updated text color to red */}
+                  <h3 className="text-3xl font-semibold text-red-500 mb-3">
                     Our Mission
                   </h3>
                   <p className="text-lg font-medium text-body-color">
@@ -27,7 +28,8 @@ const AboutSectionOne = () => {
                 </div>
                 &nbsp;
                 <div className="mb-5">
-                  <h3 className="text-3xl font-semibold text-primary mb-3">
+                  {/* Updated text color to red */}
+                  <h3 className="text-3xl font-semibold text-red-500 mb-3">
                     Our Values
                   </h3>
                   <p className="text-lg font-medium text-body-color">
@@ -38,7 +40,7 @@ const AboutSectionOne = () => {
             </div>
 
             <div className="w-full lg:w-1/2 px-4">
-              <div className="relative w-full h-0 pb-[145.25%]">  
+              <div className="relative w-full h-0 pb-[143.20%]">  
                 <Image
                   src="/images/about/about-image.png"
                   alt="about-image"
