@@ -29,12 +29,13 @@ const ContactDetails = () => {
             <FontAwesomeIcon
               icon={faPhone} 
               size="2x" 
-              className={`text-${theme === 'light' ? 'red-500' : 'white'}`}
+              className="text-red-500"
               aria-label="Phone"
             />
-            <div className={`text-2xl font-bold ${theme === 'light' ? 'text-red-500' : 'text-white'}`}>
-              Office Phone Number
-            </div>
+            <div className="text-2xl font-bold text-red-500">
+                Office Phone Number
+          </div>
+
           </div>
           <div className={`ml-8 ${theme === 'light' ? 'text-black' : 'text-white'}`}>
             <p>+63 35 422 7503 <br/> +63 906 599 9634</p>
@@ -46,12 +47,13 @@ const ContactDetails = () => {
             <FontAwesomeIcon
               icon={faEnvelope} 
               size="2x" 
-              className={`text-${theme === 'light' ? 'red-500' : 'white'}`}
+              className="text-red-500"
               aria-label="Email"
             />
-            <div className={`text-2xl font-bold ${theme === 'light' ? 'text-red-500' : 'text-white'}`}>
+           <div className="text-2xl font-bold text-red-500">
               Email
-            </div>
+          </div>
+
           </div>
           <div className={`ml-8 ${theme === 'light' ? 'text-black' : 'text-white'}`}>
             <p>getappph@gmail.com</p>
@@ -63,12 +65,13 @@ const ContactDetails = () => {
             <FontAwesomeIcon
               icon={faMapMarkerAlt} 
               size="2x"
-              className={`text-${theme === 'light' ? 'red-500' : 'white'}`}
+              className="text-red-500"
               aria-label="Location"
             />
-            <div className={`text-2xl font-bold ${theme === 'light' ? 'text-red-500' : 'text-white'}`}>
+            <div className="text-2xl font-bold text-red-500">
               Our Office Address
-            </div>
+          </div>
+
           </div>
           <div className={`ml-8 ${theme === 'light' ? 'text-black' : 'text-white'}`}>
             <p>
